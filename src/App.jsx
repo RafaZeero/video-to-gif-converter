@@ -11,6 +11,8 @@ function App() {
   const [gif, setGif] = useState()
 
   const load = async () => {
+    const sharedArray = new SharedArrayBuffer(1024)
+    console.log(sharedArray)
     await ffmpeg.load()
     setReady(true)
   }
