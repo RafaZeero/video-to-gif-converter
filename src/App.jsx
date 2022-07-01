@@ -48,6 +48,7 @@ function App() {
   return ready ? (
     <div className='container'>
       <h1 className='video_text'>Converta seus videos em gifs!</h1>
+      <p>Para acompanhar o processo, abra o console do seu navegador</p>
       <div className='video_container'>
         {video ? (
           <video
